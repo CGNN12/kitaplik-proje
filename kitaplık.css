@@ -1,0 +1,130 @@
+/* Temel Stiller */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Form Stilleri */
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group, .form-group-checkbox {
+    display: flex;
+    flex-direction: column;
+}
+.form-group-checkbox {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* Buton Stilleri */
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-submit {
+    background-color: #2ecc71;
+    color: white;
+}
+.btn-submit:hover {
+    background-color: #27ae60;
+}
+
+.btn-delete, .btn-toggle {
+    background-color: #e74c3c;
+    color: white;
+    margin-left: 5px;
+}
+.btn-toggle {
+    background-color: #3498db;
+}
+.btn-delete:hover { background-color: #c0392b; }
+.btn-toggle:hover { background-color: #2980b9; }
+
+
+/* Kitap Listesi Tablosu */
+.book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.book-table th, .book-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.book-table th {
+    background-color: #ecf0f1;
+}
+
+/* Okunan kitabın üstünü çiz */
+.read-book td:first-child, .read-book td:nth-child(2) {
+    text-decoration: line-through;
+    color: #95a5a6;
+}
+
+/* Uyarı Mesajları */
+#alert-area .alert {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
