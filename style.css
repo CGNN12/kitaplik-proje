@@ -1,0 +1,158 @@
+body {
+    background-color: rgb(174, 230, 230);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}    
+
+.input-container {
+    max-height: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 60px;
+    gap: 15;
+    border: 3px solid #f6f7bb;
+    border-radius: 15px;
+    background-color: #a4d5e9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    height: 200px;
+}
+
+#nameİnput {
+    margin-right: 350px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    
+}
+
+#yazarİnput {
+    margin-right: 330px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 7px;
+    width: 100%;
+
+
+}
+
+#checkİnput {
+    margin-right: 475px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#ekleBtn {
+    margin-left: 540px;
+    border-radius: 13px;
+    border: 1px solid #000000;
+    padding: 10px;
+    width: 70px;
+    margin-top: 20px;
+    background-color: rgb(22, 165, 165);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#ekleBtn:hover {
+    background-color: rgb(18, 130, 130);
+}
+
+label {
+    font-weight: bold;
+}
+
+
+.bookList {
+    width: 600px;
+    background-color: #a4d5e9; 
+    border: 3px solid #f6f7bb;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.bookList h3 {
+    text-align: center;
+    color: #128282;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f6f7bb;
+    padding-bottom: 10px;
+}
+
+
+#bookList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#bookList li {
+    background-color: white;
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    border-left: 5px solid #16a5a5; 
+    transition: transform 0.2s; 
+    margin-right: auto;
+}
+
+/* Kitabın üzerine gelince hafif oynasın */
+#bookList li:hover {
+    transform: translateX(5px);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.durum-okundu {
+    color: green;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.durum-okunmadı {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#deleteBtn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#deleteBtn:hover {
+    font-size: 20px;
+}
+
+
+
+.book-name {
+    margin-right: auto;
+}
